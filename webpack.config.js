@@ -15,9 +15,8 @@ module.exports = {
   module: {
     loaders: [
       //loaders transform given files
-      //this is a coffeeScript transformer
-      {test: /\.coffee$/, exclude: /node_modules/, loader: "coffee-loader"}
-    ]
+      //this is the babel transformer to transform JSX -> JS
+      {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"}    ]
   },
   output: {
     //where to output the bundled code
