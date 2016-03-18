@@ -1,3 +1,6 @@
+//This is the main JavaScript file for the app
+//Webpack will transpile this into index_bundle.js
+
 console.log('index.js loaded');
 
 var React    = require('react'),
